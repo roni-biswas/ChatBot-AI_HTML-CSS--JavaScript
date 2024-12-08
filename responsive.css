@@ -169,7 +169,7 @@
     }
     .home {
         height: 100vh;
-        align-items: flex-start;
+        align-items: center;
         padding: 50px 2% 0;
     }
     .home .home-info .home-header {
@@ -186,6 +186,10 @@
     .home .home-info ul {justify-content: center;}
     .home .about-info {
         display: none;
+    }
+    .chat-form #message-input {
+        font-size: .75rem;
+        padding: 12px 15px;
     }
     .short-bio {
         position: absolute;
