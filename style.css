@@ -18,7 +18,6 @@ font-family: "Inter", serif; */
 }
 
 body {
-    background: var(--main-color);
     color: #fff;
     position: relative;
 }
@@ -40,8 +39,8 @@ bars-animation css
     height: 100%;
     background: var(--main-color);
     transform: translateY(-100%);
-    /* animation: slide-bar .5s ease-in-out forwards;
-    animation-delay: calc(.1s * var(--i)); */
+    animation: slide-bar .5s ease-in-out forwards;
+    animation-delay: calc(.1s * var(--i));
 }
 
 @keyframes slide-bar {
