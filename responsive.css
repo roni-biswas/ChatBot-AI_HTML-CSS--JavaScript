@@ -1,0 +1,279 @@
+/* responsive for multiple device */
+
+/* extra small */
+@media only screen and (max-width: 320px ) {
+    .home {
+        height: 100vh;
+        align-items: flex-start;
+        padding: 50px 0 0;
+    }
+    .home .home-info {
+        padding: 0 4%;
+    }
+    .home .home-info .home-header {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .home .home-info .home-header .header-icon {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home .home-info ul {
+        gap: 6px;
+        align-items: flex-start;
+        margin: 1.2rem 0;
+        font-size: .75rem;
+        flex-direction: column;
+    }
+    .home .home-info ul li {
+        list-style: none;
+    }
+    .home .home-info .btn-sci {
+        align-items: center;
+        gap: 10px;
+        font-size: .55rem;
+        justify-content: center;
+    }
+    .home .home-info .btn-sci .sci a .sci-icon {
+        width: 15px;
+        height: 15px;
+    }
+    .home .about-info {
+        display: none;
+    }
+    .short-bio {
+        position: absolute;
+        left: 50%;
+        bottom: 2%;
+        font-size: .50rem;
+        width: 196px;
+        padding: 0 8px;
+        transform: translateX(-50%);
+        text-align: center;
+        line-height: .85rem;
+    }
+    #chatbot-opener-button #chatbot-opener-closer-btn {
+        width: 24px;
+        height: 24px;
+    }
+    #chatbot-opener-button #chatbot-opener-closer-btn > .notification-dot {
+        width: 4px;
+        height: 4px;
+    }
+    #chatbot-opener-button .chat-starter-message {
+        font-size: .45rem;
+        margin: 0 20px 3px 0;
+    }
+
+    #chatbot-opener-button {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .chatbot {
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+        z-index: 9;
+    }
+    .chatbot .chatbot-container {
+        height: 92vh;
+        border-radius: 0 0 12px 12px;
+        box-shadow: none;
+        overflow: hidden;
+        position: relative;
+    }
+    .chatbot-container .chat-head {
+        padding: 12px 15px;
+    }
+    .chat-body {
+        height: calc(90% - 55px);
+        padding: 25px 15px;
+    }
+    .message.bot-message {
+        text-align: left;
+    }
+    .chat-footer {
+        padding: 10px 15px 15px;
+    }
+    .chat-form .file-upload-wrapper {
+        height: 26px;
+        width: 26px;
+    }
+    .chat-form .file-upload-wrapper.file-uploaded #file-cencel {
+        opacity: 0;
+    }
+    .chatbot-container .chat-head .head-info {
+        gap: 4px;
+    }
+    .chatbot-container .chat-head .head-info .chat-head-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .chatbot-container .chat-head .head-info .logo-text {
+        font-size: .55rem;
+        gap: 5px;
+    }
+    .chatbot-container .chat-head .head-info .logo-text > span {
+        font-size: .48rem;
+    }
+    .chatbot-container .chat-head #close-chatbot {
+        font-size: 1rem;
+        width: 20px;
+        height: 20px;
+    }
+    .chat-body .message .bot-avatar {
+        width: 20px;
+        height: 20px;
+    }
+    .chat-body .message {
+        gap: 6px;
+    }
+    .chat-body .message .message-text {
+        font-size: .55rem;
+        padding: 7px 10px;
+    }
+
+    .chat-footer .chat-form {
+        height: 38px;
+        border: 1px solid var(--primary-color);
+    }
+    .chat-form .chat-controls button {
+        width: 26px;
+        height: 26px;
+    }
+    .chat-form #message-input {
+        font-size: .75rem;
+    }
+    .chatbot.show-chatbot::selection #chatbot-opener-button{
+        display: none;
+    }
+    em-emoji-picker {
+        top: -302px;
+        max-width: 280px;
+        max-height: 300px;
+    }
+
+}
+
+/* phone */
+@media only screen and (min-width: 321px) and (max-width: 484px) {
+    html{ 
+        font-size: 14px;
+    }
+    .home {
+        height: 100vh;
+        align-items: flex-start;
+        padding: 50px 2% 0;
+    }
+    .home .home-info .home-header {
+        font-size: 1.75rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .home .home-info .home-header .header-icon {
+        font-size: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -24px;
+    }
+    .home .home-info ul {justify-content: center;}
+    .home .about-info {
+        display: none;
+    }
+    .short-bio {
+        position: absolute;
+        left: 50%;
+        bottom: 15%;
+        font-size: 1rem;
+        width: 320px;
+        padding: 0 8px;
+        transform: translateX(-50%);
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .home .home-info .btn-sci {
+        margin: 31px 0 0 18px;
+    }
+    /* chatbot css  */
+    .chatbot {
+        right: 17px;
+        bottom: 0;
+        height: 94%;
+        border-radius: 0;
+        width: calc(100% - 38px);
+        z-index: 999;
+    }
+
+    .chatbot-container .chat-head {
+        padding: 12px 15px;
+    }
+
+    .chat-body {
+        height: calc(90% - 75px);
+        padding: 25px 15px;
+    }
+    .chat-footer {
+        padding: 10px 15px 15px;
+    }
+    .chat-form .file-upload-wrapper.file-uploaded #file-cencel {
+        opacity: 0;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 485px) and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .home .home-info .home-header {
+        font-size: 1.75rem;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .home .home-info .home-header .header-icon {
+        font-size: 5rem;
+        margin-bottom: -12px;
+    }
+    .home .home-info ul {
+        margin: 1.3rem 0;
+        flex-direction: row;
+        font-size: .75rem;
+        align-items: center;
+        justify-content: center;
+        gap: 21px;
+    }
+    .home .home-info .btn-sci {
+        gap: 8px;
+        margin-top: 45px;
+    }
+    .home .home-info .btn-sci .sci a .sci-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .short-bio {
+        bottom: 2%;
+        width: 200px;
+    }
+
+    .home .about-info {
+        align-items: flex-end;
+        align-self: self-start;
+        padding: 47px 0 0 0;
+    }
+    .chatbot {
+        width: calc(100% - 115px);
+    }
+    .chat-form #message-input {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+}
